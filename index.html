@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        input {
+            margin: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
+        <label for="nif">NIF: </label>
+        <input type="text" name="nif" id="nif"><br>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" id="apellidos"><br>
+        <label for="edad">Edad: </label><br>
+        <input type="radio" id="15-19" name="edad" value="15-19">
+        <label for="15-19">15-19</label><br>
+        <input type="radio" id="20-29" name="edad" value="20-29">
+        <label for="20-29">20-29</label><br>
+        <input type="radio" id="30-40" name="edad" value="30-40">
+        <label for="30-40">30-40</label><br>
+
+        <label for="estado-civil">Estado civil:</label>
+        <input list="ecivil" name="estado-civil" id="estado-civil">
+        <datalist id="ecivil">
+            <option value="Soltero">
+            <option value="Casado">
+            <option value="Divorciado">
+        </datalist><br>
+        <label for="aficiones">Aficiones:</label><br>
+        <input type="checkbox" id="cine" name="cine" value="Cine">
+        <label for="cine"> Cine</label><br>
+        <input type="checkbox" id="deportes" name="deportes" value="Deportes">
+        <label for="deportes"> Deportes</label><br>
+        <input type="checkbox" id="lectura" name="lectura" value="Lectura">
+        <label for="lectura"> Lectura</label><br>
+        <input type="checkbox" id="senderismo" name="senderismo" value="Senderismo">
+        <label for="senderismo"> Senderismo</label><br>
+        <label for="comentarios">Comentarios: </label> <br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="40" maxlength="200"></textarea><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
